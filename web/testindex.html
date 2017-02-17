@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ETRI Demo</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.js"></script>
+    <script>
+	   function delArticle(param){
+		  alert("삭제되었습니다.");
+		  alert(param);
+		location.href="/AkinatorApp/mongo.action?command=mongodel&delArticle="+param;
+	}
+    </script>
+
+    <script>
+   $(document).ready(function(){
+    $("#Resoning").one("click",function(){
+        $.getJSON('json/Result.json', null, function(data, status){
+            $.each(data, function(index, entry){    
+                var img ="img/"
+                var Ontology = "MediaData/Ontology/"
+                var json = "json/PersonalMedia161102.owl"
+                
+                
+                photo = [];
+                photo.push("&nbsp<p align=center><img src='img/shot00000000.png' style='width:250px;display:block;'>");
+                photo.push("&nbsp<p align=center><img src='img/shot00000001.png' style='width:250px;display:block;'>");
+                 
+                var trObj = null;
+                var tdObj1 = null;
+                var trObj2 = null;
+                var trObj3 = null;
+                ///////////////////////////////////////////////
+                
+                for(var i=0; i<data['Result'].length; i++){             //result갯수는 2개
+                   
+                    str = "";                                             //2개중 첫번째 result에 있는 Inferred Activity를 가져와 str에 저장 
+                    str += data['Result'][i]['Inferred Activity']         
+                    strsplit = str.split('\n')                            //<br>처리
+                    strResult="";  
+                    console.log(data['Result'][i]['Matched Rule'])
+                    for(var j=0; j<strsplit.length; j++){
+                        strResult += '&nbsp;'+strsplit[j]+'<br>'
+                    }                                                     //strResult엔 <br>처리된 Inferred Activity저장 (첫번째 iter이기 때문에 첫번째꺼 저장)
+                    
+                    match = "";
+                    match += data['Result'][i]['Matched Rule']
+                    //matchsplit
+                    
+                    var trObj = document.createElement("tr");             //첫번째 Inferred Activity가 저장 될 tr생성
+                    var tdObj1 = document.createElement("td");        //tr에 td 3개 생성
+                    tdObj1.style.margin="0px auto";
+                    tdObj1.style.width="25%";
+                    var tdObj2 = document.createElement("td");
+                    var tdObj3 = document.createElement("td");
+                    trObj.appendChild(tdObj1);
+                    trObj.appendChild(tdObj2);
+                    trObj.appendChild(tdObj3);
+                    
+                    tdObj1.innerHTML=photo[i];  
+                    tdObj2.innerHTML='<font size=3>'+strResult+'</font>';
+                    tdObj3.innerHTML='<font size=3>'+match+'</font>';
+                    ActivitysEvent.appendChild(trObj);
+                    
+                  }
+                })
+                   
+                ///////////////////////////////////////////////
+                
+                
+                match += data['Result'][0]['Matched Rule']
+                matchsplit = match.split('\n')
+                matchResult = "";
+                for(var i=0; i<matchsplit.length; i++){
+                    matchResult += '&nbsp;'+matchsplit[i]+'<br>'
+                }
+                i=1;
+                console.log('RAE_img'+i)
+                
+                
+            });
+        });
+    });
+
+    
+    </script>
+    <script type="text/javascript">
+    
+    function menuClick(){
+            var Media ="img/"
+            var Ontology="MediaData/Ontology/"
+            var Result = "json/"
+            var Image1 = "img/shot00000000.png"
+            var Image1 = "img/shot00000001.png"
+            var Image1 = "img/shot00000002.png"
+            
+            location.href ="DLResoner?Media="+Media+"&Ontology="+Ontology+"& Result="+Result; 
+            }    
+            document.getElementById("shot1").innerHTML='<object width="100%" type="text/html" data="MediaData/InstanceFiles/BIC_001/shot00"></object>';
+            document.getElementById("shot2").innerHTML='<object width="100%" type="text/html" data="MediaData/InstanceFiles/BIC_001/shot01"></object>';
+            document.getElementById("shot3").innerHTML='<object width="100%" type="text/html" data="MediaData/InstanceFiles/BIC_001/shot02"></object>';
+            document.getElementById("Rule").innerHTML='<object  type="text/html" data="MediaData/Rule/rules.txt"></object>';
+            document.getElementById("img1").innerHTML='&nbsp<p align=center><img src="'+Image1+'" width=350 align="center">';
+            document.getElementById("img2").innerHTML='&nbsp<p align=center><img src="'+Image2+'" width=350 align="center">';
+            document.getElementById("img3").innerHTML='&nbsp<p align=center><img src="'+Image3+'" width=350 align="center">';
+            
+            
+    }
+   
+    </script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">ETRI Demo</a> </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li> <a href="#">About</a> </li>
+                    <li> <a href="#">Services</a> </li>
+                    <li> <a href="#">Contact</a> </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Image Background Page Header -->
+    <!-- Note: The background image is set within the business-casual.css file. -->
+    <header class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="tagline"></h1>
+                    <table border=1 width=100% height=350>
+                        <div style="width:100px; height:50px;">
+                            <!--<input type="file" name="FileNamedd">-->
+                            
+                            <button class="btn btn-primary btn-lg" onclick=menuClick()><i class="glyphicon glyphicon-download-alt"></i>&nbsp;&nbsp;Load&nbsp;&nbsp;</button>
+                        </div>
+                        <thead class="thead-inverse" bgcolor="#333333">
+                        <tr height=10%>
+                            <td colspan=3><b><font size=4 color="white">&nbsp; Media data Info </font></b></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr height=10 bgcolor="#D5D5D5" style="padding-top:40">
+                            <td width=20% colspan=3><font size=4> &nbsp;Shots</font></td>
+                        </tr>
+                        <tr height=40%>
+                            <td width=25% id="img1">
+                            </td>
+                            <td width=25% id="img2"></td>
+                            <td width=25% id="img3"></td>
+                        </tr>
+                        <tr>
+                            <td id="shot1" >
+                                <div id="shot1"></div>
+                            </td>
+                            <td>
+                                <div id="shot2"></div>
+                            </td>
+                            <td>
+                                <div id="shot3"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=3><div id="Rule"></div>
+                                </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">&nbsp;</div>
+    <div style="width:100px; height:80px; margin:0  auto;">
+        <button class="btn btn-primary btn-lg">Generate Desc</button>
+    </div>
+    <header class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <table border=1 width=100% height=350>
+                        <thead class="thead-inverse" bgcolor="#333333">
+                        <tr height=10%>
+                            <td colspan=3><b><font size=4 color="white">&nbsp; Activity Class Description </font></b></td>
+                            <form method="get" action="MyServlet">
+             <input type="submit" name="submit" value="send">
+            <input type="text" name="name">
+            
+        </form>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                            
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    </header>
+        <div class="container">&nbsp;</div>
+    <div style="width:100px; height:45px; margin:0 auto;">
+        <button class="btn btn-primary btn-lg" id="Resoning"><i class="glyphicon glyphicon-ok"></i>&nbsp;&nbsp;&nbsp;&nbsp;Reasoning&nbsp;&nbsp;&nbsp;&nbsp;</button>
+        
+    </div>
+        <div class="container">&nbsp;</div>
+     <header class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <table border=1 width=100% height=350>
+                        <thead class="thead-inverse" bgcolor="#333333">
+                        <tr height=10%>
+                            <td colspan=3><b><font size=4 color="white">&nbsp; Recognized Activitys & Event </font></b></td>
+                        </tr>
+                         <tr bgcolor="#D5D5D5">
+                            <td width=5 align=center><font size=4>Shots</font></td>
+                            <td width=5 align=center><font size=4>Recognized Activitys</font></td>
+                            <td width=5 align=center><font size=3>Matched Rule List</font></td>
+                        </tr>
+                        </thead>
+                        <tbody id=ActivitysEvent >
+                         
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    </header>
+    <!-- Page Content -->
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>What We Do</h2>
+                <p>Introduce the visitor to the business using clear, informative text. Use well-targeted keywords within your sentences to make sure search engines can find the business.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.</p>
+                <p> <a class="btn btn-default btn-lg" href="#">Call to Action &raquo;</a> </p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Contact Us</h2> <address>
+                    <strong>Soongsil Univ</strong>
+                    <br>AI LAB
+                    <br>정보과학관 206호
+                    <br>
+                </address> <address>
+                    <abbr title="Phone">P:</abbr>(010) 6669-8499
+                    <br>
+                    <abbr title="Email">E:</abbr> <a href="mailto:#">houn8499@naver.com</a>
+                </address> </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <div class="row">
+            <div class="col-sm-4"> <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
+                <h2>Marketing Box #1</h2>
+                <p>These marketing boxes are a great place to put some information. These can contain summaries of what the company does, promotional information, or anything else that is relevant to the company. These will usually be below-the-fold.</p>
+            </div>
+            <div class="col-sm-4"> <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
+                <h2>Marketing Box #2</h2>
+                <p>The images are set to be circular and responsive. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+            </div>
+            <div class="col-sm-4"> <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
+                <h2>Marketing Box #3</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>&copy; Etri Demo Version 2016</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+    </div>
+    <!-- /.container -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
