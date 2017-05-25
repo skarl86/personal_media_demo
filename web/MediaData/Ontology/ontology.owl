@@ -1,0 +1,3069 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Ontology xml:base="http://www.personalmedia.org/soongsil-diquest" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2002/07/owl#">
+    <Prefix IRI="http://www.personalmedia.org/soongsil-diquest#" name="p0"/>
+    <Prefix IRI="http://www.w3.org/2002/07/owl#" name="owl"/>
+    <Prefix IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#" name="rdf"/>
+    <Prefix IRI="http://www.w3.org/XML/1998/namespace" name="xml"/>
+    <Prefix IRI="http://www.w3.org/2001/XMLSchema#" name="xsd"/>
+    <Prefix IRI="http://www.w3.org/2000/01/rdf-schema#" name="rdfs"/>
+    <Declaration>
+        <Class IRI="#Color"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportsEquipment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#eventName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bird"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Race"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasScript"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeddingProcession"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bowl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CelebrateDancing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FryingPan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CuttingCake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fruit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTextual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metadata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BellAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BirdAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeddingMarch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntroduceMakeup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aural"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Candle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HandlingFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mouth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChoppingBoard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FireCrackerAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreparingFoodIngredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dog"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasShot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CuttingAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MammalAudio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CameraShutterAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhistleAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Woman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrumAudio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWho"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VaccumAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoiseAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Video"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtractAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BigCatAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#actionName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Direction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KitchenTool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlasticBag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoalNet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AppearVideoPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeaFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ball"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fox"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Balloon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Under"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mirror"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microwave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RodentAnimal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SongAudio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWhatObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheeringPeople"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#When"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BabyAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlayingSport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Movement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FireCracker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MicroWave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bicycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clapping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BicycleStunt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlackRace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiceCooker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RidiculeAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weddingdress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YellowRace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiningTable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chicken"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheeringWithSong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#person01"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Position"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mortar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWhatBehavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SingSong"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AppearTextBirthdayParty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Face"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scoop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeddingFireCracker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Left"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClappingAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pizza"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CellPhone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoastFoodAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Container"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Picture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InstrumentAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ramen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#person02"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spoon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StirAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Audio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KitchenTowel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWhere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hanbok"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntroduceRecipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlayingWithAnimal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gloves"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasRangeFireAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mammal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnimalAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FoodIngredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeddingDress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhatBehavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Generation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chopsticks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicInstrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Partyhat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlasticBagAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Camera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeddingSongAudio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMetadata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#congtext01"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Textual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Box"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Right"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#shot04"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Celebrating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CongraturationInBirthday"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWhy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReptileAnimal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoilingOil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GatheringPeople"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BarkingAnimal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EatingFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Piano"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#How"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhatObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Where"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BackGroundAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decoration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eyes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SingingBirthdaySong"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartyHat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreparingParty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Move"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Why"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AppearPartyProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWhen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShoutingAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Above"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BirthdaySongAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CookAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BarkingDog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Talking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PetSnack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KitchenKnife"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoilingAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpeningCanAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cosmetic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lighting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntrumentAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Who"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Net"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaughAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Door"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVisual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SettingOffFirecracker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Present"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breadknife"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pen"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasText"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightingCandle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Octopus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SiningBirthdaySongWithCakeOrCandle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsingCosmetic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StirFryFoodAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PuffingAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntroduceFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CryingAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clothing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAural"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Can"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DogToy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExplainFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scissors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BarkingCat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Element"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteRace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShootingCamera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Modifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CatAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TearPaperAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BreadKnife"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Helmet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlowingUpBalloon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtractObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Voice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChoppingAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BigCat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#birthdaysong01"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FanfareAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DogAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SideDish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Man"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheeringAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartOfBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AppearTextFirstBirthday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gratin"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Activity"/>
+        <Class IRI="#Shot"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AppearPartyProduct"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasVisual"/>
+                    <Class IRI="#Cake"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasVisual"/>
+                    <Class IRI="#Candle"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#FireCracker"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#PartyHat"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AppearTextBirthdayParty"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTextual"/>
+            <ObjectUnionOf>
+                <DataHasValue>
+                    <DataProperty IRI="#hasText"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">birthday</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#hasText"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">birthdayparty</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AppearTextFirstBirthday"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTextual"/>
+            <ObjectUnionOf>
+                <DataHasValue>
+                    <DataProperty IRI="#hasText"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">firstbirthday</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#hasText"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">firstbirthdayparty</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AppearVideoPerson"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasVisual"/>
+            <Class IRI="#Person"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BarkingAnimal"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#AnimalAudio"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Animal"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BarkingCat"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#CatAudio"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Cat"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BarkingDog"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#DogAudio"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Dog"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BicycleStunt"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasWhatBehavior"/>
+                    <Class IRI="#Jump"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasWhatBehavior"/>
+                    <Class IRI="#Lift"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Bicycle"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BlowingUpBalloon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasVisual"/>
+            <Class IRI="#Balloon"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BreadKnife"/>
+        <Class IRI="#Breadknife"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CelebrateDancing"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <ObjectUnionOf>
+                    <Class IRI="#ClappingAudio"/>
+                    <Class IRI="#SongAudio"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Lighting"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Person"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Person"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Celebrating"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTextual"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasText"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">congratulation</Literal>
+            </DataHasValue>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CheeringPeople"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#CheeringAudio"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Person"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CheeringWithSong"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#CheeringAudio"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#SongAudio"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Person"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Clapping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAural"/>
+            <Class IRI="#ClappingAudio"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CongraturationInBirthday"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasAural"/>
+                    <Class IRI="#SongAudio"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasVisual"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#Cake"/>
+                        <Class IRI="#Candle"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#BirthdaySongAudio"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTextual"/>
+                <ObjectUnionOf>
+                    <DataHasValue>
+                        <DataProperty IRI="#hasText"/>
+                        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">birthday</Literal>
+                    </DataHasValue>
+                    <DataHasValue>
+                        <DataProperty IRI="#hasText"/>
+                        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">birthdayparty</Literal>
+                    </DataHasValue>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CuttingCake"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#BreadKnife"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Cake"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Person"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EatingFood"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#DiningTable"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Food"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Person"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Event"/>
+        <Class IRI="#Video"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ExplainFood"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#Voice"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#FoodIngredient"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#KitchenTool"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GatheringPeople"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#hasVisual"/>
+            <Class IRI="#Person"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HandlingFood"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <ObjectUnionOf>
+                    <Class IRI="#BoilingAudio"/>
+                    <Class IRI="#ChoppingAudio"/>
+                    <Class IRI="#SongAudio"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#FoodIngredient"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Hand"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#KitchenTool"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Instrument"/>
+        <Class IRI="#MusicInstrument"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#IntroduceFood"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTextual"/>
+                <DataHasValue>
+                    <DataProperty IRI="#hasText"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">food</Literal>
+                </DataHasValue>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTextual"/>
+                <DataHasValue>
+                    <DataProperty IRI="#hasText"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">foodingredient</Literal>
+                </DataHasValue>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#IntroduceMakeup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTextual"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasText"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">makeup</Literal>
+            </DataHasValue>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#IntroduceRecipe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTextual"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasText"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">recipe</Literal>
+            </DataHasValue>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LightingCandle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasVisual"/>
+            <Class IRI="#Candle"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MicroWave"/>
+        <Class IRI="#Microwave"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PartyHat"/>
+        <Class IRI="#Partyhat"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PlayingSport"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#SportsEquipment"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="8">
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Person"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PlayingWithAnimal"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <ObjectUnionOf>
+                    <Class IRI="#AnimalAudio"/>
+                    <Class IRI="#Voice"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Animal"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PreparingFoodIngredient"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTextual"/>
+                <DataHasValue>
+                    <DataProperty IRI="#hasText"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">foodingredient</Literal>
+                </DataHasValue>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#FoodIngredient"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PreparingParty"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Balloon"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#PartyHat"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Person"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SettingOffFirecracker"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAural"/>
+            <Class IRI="#FireCrackerAudio"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ShootingCamera"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#CameraShutterAudio"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Camera"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Person"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SingSong"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#SongAudio"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Person"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SingingBirthdaySong"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#BirthdaySongAudio"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Person"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SiningBirthdaySongWithCakeOrCandle"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasVisual"/>
+                    <Class IRI="#Cake"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasVisual"/>
+                    <Class IRI="#Candle"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#BirthdaySongAudio"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Talking"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasVisual"/>
+                        <Class IRI="#Phone"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectMinCardinality cardinality="1">
+                        <ObjectProperty IRI="#hasVisual"/>
+                        <Class IRI="#Person"/>
+                    </ObjectMinCardinality>
+                </ObjectIntersectionOf>
+                <ObjectMinCardinality cardinality="2">
+                    <ObjectProperty IRI="#hasVisual"/>
+                    <Class IRI="#Person"/>
+                </ObjectMinCardinality>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#Voice"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UsingCosmetic"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasTextual"/>
+                    <DataHasValue>
+                        <DataProperty IRI="#hasText"/>
+                        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cosmetic</Literal>
+                    </DataHasValue>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasVisual"/>
+                    <Class IRI="#Cosmetic"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Person"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WeddingDress"/>
+        <Class IRI="#Weddingdress"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WeddingMarch"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#FanfareAudio"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Person"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WeddingProcession"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAural"/>
+                <Class IRI="#ClappingAudio"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Flower"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisual"/>
+                <Class IRI="#Person"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Above"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnimalAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AppearPartyProduct"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AppearTextBirthdayParty"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AppearTextFirstBirthday"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AppearVideoPerson"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Audio"/>
+        <Class IRI="#Aural"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aural"/>
+        <Class IRI="#ExtractObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BabyAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BackGroundAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ball"/>
+        <Class IRI="#SportsEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Balloon"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BarkingAnimal"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BarkingCat"/>
+        <Class IRI="#BarkingAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BarkingDog"/>
+        <Class IRI="#BarkingAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bat"/>
+        <Class IRI="#SportsEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bed"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BellAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BicycleStunt"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BigCat"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BigCatAudio"/>
+        <Class IRI="#AnimalAudio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bird"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BirdAudio"/>
+        <Class IRI="#AnimalAudio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BirthdaySongAudio"/>
+        <Class IRI="#SongAudio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlackRace"/>
+        <Class IRI="#Race"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlowingUpBalloon"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoilingAudio"/>
+        <Class IRI="#CookAudio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoilingOil"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Book"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowl"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Box"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreadKnife"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breadknife"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cake"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Camera"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CameraShutterAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Can"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Candle"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cat"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CatAudio"/>
+        <Class IRI="#AnimalAudio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CelebrateDancing"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Celebrating"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CellPhone"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chair"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheeringAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheeringPeople"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheeringWithSong"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken"/>
+        <Class IRI="#Bird"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChoppingAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChoppingBoard"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chopsticks"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clapping"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClappingAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clothing"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Color"/>
+        <Class IRI="#Modifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CongraturationInBirthday"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Container"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CookAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cosmetic"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CryingAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cup"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CuttingAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CuttingCake"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decoration"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiningTable"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dish"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DogAudio"/>
+        <Class IRI="#AnimalAudio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DogToy"/>
+        <Class IRI="#Toy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Door"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drum"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DrumAudio"/>
+        <Class IRI="#IntrumentAudio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ear"/>
+        <Class IRI="#PartOfBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EatingFood"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExplainFood"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eyes"/>
+        <Class IRI="#PartOfBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Face"/>
+        <Class IRI="#PartOfBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FanfareAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fence"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FireCracker"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FireCrackerAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flag"/>
+        <Class IRI="#SportsEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flower"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodIngredient"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fork"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fox"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fruit"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FryingPan"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasRange"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasRangeFireAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GatheringPeople"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gender"/>
+        <Class IRI="#Modifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Generation"/>
+        <Class IRI="#Modifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gloves"/>
+        <Class IRI="#SportsEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoalNet"/>
+        <Class IRI="#SportsEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gratin"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hanbok"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hand"/>
+        <Class IRI="#PartOfBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HandlingFood"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hear"/>
+        <Class IRI="#PartOfBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helmet"/>
+        <Class IRI="#SportsEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#How"/>
+        <Class IRI="#Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Instrument"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InstrumentAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntroduceFood"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntroduceMakeup"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntroduceRecipe"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntrumentAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jump"/>
+        <Class IRI="#WhatBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KitchenKnife"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KitchenTool"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KitchenTowel"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaughAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Left"/>
+        <Class IRI="#Direction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lift"/>
+        <Class IRI="#WhatBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lighting"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightingCandle"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#ExtractObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mammal"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MammalAudio"/>
+        <Class IRI="#AnimalAudio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Man"/>
+        <Class IRI="#Gender"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MicroWave"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microwave"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mirror"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mortar"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mouth"/>
+        <Class IRI="#PartOfBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Move"/>
+        <Class IRI="#Movement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movement"/>
+        <Class IRI="#ExtractAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicInstrument"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Net"/>
+        <Class IRI="#SportsEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoiseAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nose"/>
+        <Class IRI="#PartOfBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Octopus"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpeningCanAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartOfBody"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartyHat"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Partyhat"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pen"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PetSnack"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phone"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piano"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Picture"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pizza"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlasticBag"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlasticBagAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlayingSport"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlayingWithAnimal"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Position"/>
+        <Class IRI="#ExtractAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pot"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreparingFoodIngredient"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreparingParty"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Present"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PuffingAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Race"/>
+        <Class IRI="#Modifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ramen"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReptileAnimal"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rice"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiceCooker"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RidiculeAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Right"/>
+        <Class IRI="#Direction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoastFoodAudio"/>
+        <Class IRI="#CookAudio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RodentAnimal"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scissors"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scoop"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeaFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SettingOffFirecracker"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShootingCamera"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShoutingAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SideDish"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SingSong"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SingingBirthdaySong"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SiningBirthdaySongWithCakeOrCandle"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Snack"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SongAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spoon"/>
+        <Class IRI="#KitchenTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportsEquipment"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StirAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StirFryFoodAudio"/>
+        <Class IRI="#CookAudio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stop"/>
+        <Class IRI="#Movement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Table"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Talking"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TearPaperAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Textual"/>
+        <Class IRI="#ExtractObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toy"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tree"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Under"/>
+        <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingCosmetic"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VaccumAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Visual"/>
+        <Class IRI="#ExtractObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voice"/>
+        <Class IRI="#Aural"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water"/>
+        <Class IRI="#Visual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeddingDress"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeddingFireCracker"/>
+        <Class IRI="#FireCracker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeddingMarch"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeddingProcession"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeddingSongAudio"/>
+        <Class IRI="#SongAudio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weddingdress"/>
+        <Class IRI="#Clothing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhatBehavior"/>
+        <Class IRI="#Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhatObject"/>
+        <Class IRI="#Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#When"/>
+        <Class IRI="#Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Where"/>
+        <Class IRI="#Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhistleAudio"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteRace"/>
+        <Class IRI="#Race"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Who"/>
+        <Class IRI="#Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Why"/>
+        <Class IRI="#Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Woman"/>
+        <Class IRI="#Gender"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YellowRace"/>
+        <Class IRI="#Race"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#BirthdaySongAudio"/>
+        <NamedIndividual IRI="#birthdaysong01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Textual"/>
+        <NamedIndividual IRI="#congtext01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#person01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#person02"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAural"/>
+        <NamedIndividual IRI="#shot04"/>
+        <NamedIndividual IRI="#birthdaysong01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTextual"/>
+        <NamedIndividual IRI="#shot04"/>
+        <NamedIndividual IRI="#congtext01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasVisual"/>
+        <NamedIndividual IRI="#shot04"/>
+        <NamedIndividual IRI="#person01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasVisual"/>
+        <NamedIndividual IRI="#shot04"/>
+        <NamedIndividual IRI="#person02"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasText"/>
+        <NamedIndividual IRI="#congtext01"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">congratulation</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasColor"/>
+        <ObjectProperty IRI="#hasModifier"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGender"/>
+        <ObjectProperty IRI="#hasModifier"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGeneration"/>
+        <ObjectProperty IRI="#hasModifier"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHow"/>
+        <ObjectProperty IRI="#hasMetadata"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRace"/>
+        <ObjectProperty IRI="#hasModifier"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWhatBehavior"/>
+        <ObjectProperty IRI="#hasMetadata"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWhatObject"/>
+        <ObjectProperty IRI="#hasMetadata"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWhen"/>
+        <ObjectProperty IRI="#hasMetadata"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWhere"/>
+        <ObjectProperty IRI="#hasMetadata"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWho"/>
+        <ObjectProperty IRI="#hasMetadata"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWhy"/>
+        <ObjectProperty IRI="#hasMetadata"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAction"/>
+        <Class IRI="#Element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAural"/>
+        <Class IRI="#Shot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHow"/>
+        <Class IRI="#Shot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Shot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMetadata"/>
+        <Class IRI="#Shot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModifier"/>
+        <Class IRI="#Visual"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasObject"/>
+        <Class IRI="#Element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasShot"/>
+        <Class IRI="#Video"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubject"/>
+        <Class IRI="#Element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTextual"/>
+        <Class IRI="#Shot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVisual"/>
+        <Class IRI="#Shot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWhatBehavior"/>
+        <Class IRI="#Shot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWhatObject"/>
+        <Class IRI="#Shot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWhen"/>
+        <Class IRI="#Shot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWhere"/>
+        <Class IRI="#Shot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWho"/>
+        <Class IRI="#Shot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWhy"/>
+        <Class IRI="#Shot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAction"/>
+        <Class IRI="#ExtractAction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAural"/>
+        <Class IRI="#Aural"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHow"/>
+        <Class IRI="#How"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetadata"/>
+        <Class IRI="#Metadata"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModifier"/>
+        <Class IRI="#Modifier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasObject"/>
+        <ObjectUnionOf>
+            <Class IRI="#Direction"/>
+            <Class IRI="#Visual"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRace"/>
+        <Class IRI="#Race"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasShot"/>
+        <Class IRI="#Shot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubject"/>
+        <Class IRI="#Visual"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTextual"/>
+        <Class IRI="#Textual"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVisual"/>
+        <Class IRI="#Visual"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWhatBehavior"/>
+        <Class IRI="#WhatBehavior"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWhatObject"/>
+        <Class IRI="#WhatObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWhen"/>
+        <Class IRI="#When"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWhere"/>
+        <Class IRI="#Where"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWho"/>
+        <Class IRI="#Who"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWhy"/>
+        <Class IRI="#Why"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#eventName"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasScript"/>
+        <Class IRI="#Voice"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#actionName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#eventName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasScript"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Activity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Activity는 List 정의와 내부 정의는 숭실대 담당</Literal>
+    </AnnotationAssertion>
+<Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_타다_낮"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_강당_입학식"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_후불기_양초"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_화장하다_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_집_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_자전거_낮"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_멈춤_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_Empty_낮"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_걸음마하다_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_무대_재롱잔치"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_돌잔치_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_후불기_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_놀이공원_낮"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_골프장_낮"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_실내_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_걷다_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_놀다_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_산_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_걸음마하다_집"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_노래하다_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_강당_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_Empty_집"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_Empty_돌잔치"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_노래_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_Empty_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_양초_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_예식장_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_유치원_Empty"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_노래하다_노래"/>
+      </Declaration><Declaration>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_물고기_Empty"/>
+      </Declaration><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_강당_입학식"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_학생1"/><Class abbreviatedIRI="p0:Visual_의자"/><Class abbreviatedIRI="p0:Visual_학생2"/><Class abbreviatedIRI="p0:Visual_마이크"/><Class abbreviatedIRI="p0:Visual_선생님"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_타다_낮"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_자전거"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_남자"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_사람들"/><Class abbreviatedIRI="p0:Visual_소년"/><Class abbreviatedIRI="p0:Visual_소녀"/><Class abbreviatedIRI="p0:Visual_놀이기구"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_후불기_양초"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_양초"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_케이크"/><Class abbreviatedIRI="p0:Visual_남자아이01"/><Class abbreviatedIRI="p0:Visual_여자아이01"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_화장하다_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_화장하는여자01"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_얼굴"/><Class abbreviatedIRI="p0:Visual_입술"/><Class abbreviatedIRI="p0:Visual_눈"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_자전거_낮"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_자전거"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_남자"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_소년"/><Class abbreviatedIRI="p0:Visual_나무"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_집_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_걸음마보조기"/><Class abbreviatedIRI="p0:Visual_아빠"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_멈춤_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_나무"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_Empty_낮"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_남자"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_골프공"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_무대_재롱잔치"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_여자아이1"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_남자아이1"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_여자아이"/><Class abbreviatedIRI="p0:Visual_남자아이"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_걸음마하다_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_엄마"/><Class abbreviatedIRI="p0:Visual_걸음마보조기"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_돌잔치_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_엄마"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_아빠"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_후불기_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_양초"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_케이크"/><Class abbreviatedIRI="p0:Visual_남자아이01"/><Class abbreviatedIRI="p0:Visual_여자아이01"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_놀이공원_낮"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_사람들"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_놀이기구"/><Class abbreviatedIRI="p0:Visual_소녀"/><Class abbreviatedIRI="p0:Visual_후룸라이드"/><Class abbreviatedIRI="p0:Visual_남자"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_골프장_낮"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_골프공"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_남자"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_골프채"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_여자"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_실내_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_엄마"/><Class abbreviatedIRI="p0:Visual_자전거"/><Class abbreviatedIRI="p0:Visual_남자"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_걷다_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_졸업가운"/><Class abbreviatedIRI="p0:Visual_나무"/><Class abbreviatedIRI="p0:Visual_남자등산객01"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_놀다_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_여자아이01"/><Class abbreviatedIRI="p0:Visual_장난감"/><Class abbreviatedIRI="p0:Visual_여자01"/><Class abbreviatedIRI="p0:Visual_여자아이"/><Class abbreviatedIRI="p0:Visual_공"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_산_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_나무"/><Class abbreviatedIRI="p0:Visual_남자등산객01"/><Class abbreviatedIRI="p0:Visual_등산지팡이"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_걸음마하다_집"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_걸음마보조기"/><Class abbreviatedIRI="p0:Visual_아빠"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_노래하다_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_케이크"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_남자아이01"/><Class abbreviatedIRI="p0:Visual_여자01"/><Class abbreviatedIRI="p0:Visual_여자아이01"/><Class abbreviatedIRI="p0:Visual_남자01"/><Class abbreviatedIRI="p0:Visual_양초"/><Class abbreviatedIRI="p0:Visual_여자02"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_강당_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_졸업생01"/><Class abbreviatedIRI="p0:Visual_학생02"/><Class abbreviatedIRI="p0:Visual_졸업생02"/><Class abbreviatedIRI="p0:Visual_학생01"/><Class abbreviatedIRI="p0:Visual_졸업장"/><Class abbreviatedIRI="p0:Visual_학장"/><Class abbreviatedIRI="p0:Visual_현수막"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_Empty_집"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_Empty_돌잔치"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_아기"/><Class abbreviatedIRI="p0:Visual_아빠"/><Class abbreviatedIRI="p0:Visual_엄마"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_노래_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_케이크"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_남자아이01"/><Class abbreviatedIRI="p0:Visual_여자01"/><Class abbreviatedIRI="p0:Visual_여자아이01"/><Class abbreviatedIRI="p0:Visual_남자01"/><Class abbreviatedIRI="p0:Visual_양초"/><Class abbreviatedIRI="p0:Visual_여자아이"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_Empty_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_양초"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_화장하는여자01"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_아기"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_양초_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_양초"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_케이크"/><Class abbreviatedIRI="p0:Visual_남자아이01"/><Class abbreviatedIRI="p0:Visual_여자아이01"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_예식장_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_신부"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_신랑"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_어머니"/><Class abbreviatedIRI="p0:Visual_촛불"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_유치원_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_유치원생01"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_유치원생02"/><Class abbreviatedIRI="p0:Visual_양초"/><Class abbreviatedIRI="p0:Visual_졸업생01"/><Class abbreviatedIRI="p0:Visual_졸업가운"/><Class abbreviatedIRI="p0:Visual_여자아이"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_물고기_Empty"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_물고기"/>
+    </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><EquivalentClasses>
+          <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_노래하다_노래"/>
+          <ObjectIntersectionOf><ObjectSomeValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_케이크"/>
+    </ObjectSomeValuesFrom><ObjectSomeValuesFrom>
+        <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+        <ObjectUnionOf>
+          <Class abbreviatedIRI="p0:Visual_남자아이01"/><Class abbreviatedIRI="p0:Visual_여자01"/><Class abbreviatedIRI="p0:Visual_여자아이01"/><Class abbreviatedIRI="p0:Visual_남자01"/><Class abbreviatedIRI="p0:Visual_양초"/><Class abbreviatedIRI="p0:Visual_유치원생01"/>
+        </ObjectUnionOf>
+      </ObjectSomeValuesFrom></ObjectIntersectionOf>
+        </EquivalentClasses><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_타다_낮"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_자전거"/>
+    </ObjectAllValuesFrom><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_남자"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_후불기_양초"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_양초"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_화장하다_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_화장하는여자01"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_자전거_낮"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_자전거"/>
+    </ObjectAllValuesFrom><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_남자"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_집_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_집_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_Empty_낮"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectAllValuesFrom><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_남자"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_무대_재롱잔치"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_여자아이1"/>
+    </ObjectAllValuesFrom><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_남자아이1"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_걸음마하다_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_돌잔치_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectAllValuesFrom><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_엄마"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_후불기_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_양초"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_놀이공원_낮"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_사람들"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_골프장_낮"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_골프공"/>
+    </ObjectAllValuesFrom><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_남자"/>
+    </ObjectAllValuesFrom><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_골프채"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_실내_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_실내_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_실내_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_실내_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_걸음마하다_집"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_노래하다_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_케이크"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_노래하다_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_케이크"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_Empty_집"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_Empty_집"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_아기"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_노래_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_케이크"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_Empty_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_양초"/>
+    </ObjectAllValuesFrom><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_화장하는여자01"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_양초_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_양초"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_예식장_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_신부"/>
+    </ObjectAllValuesFrom><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_신랑"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_유치원_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_유치원생01"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_물고기_Empty"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_물고기"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf><SubClassOf>
+                    <Class IRI="http://www.personalmedia.org/soongsil-diquest#M_Activity_노래하다_노래"/>
+                    <ObjectIntersectionOf><ObjectAllValuesFrom>
+      <ObjectProperty abbreviatedIRI="p0:hasVisual"/>
+      <Class abbreviatedIRI="p0:Visual_케이크"/>
+    </ObjectAllValuesFrom></ObjectIntersectionOf>
+                  </SubClassOf></Ontology>
