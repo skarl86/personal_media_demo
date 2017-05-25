@@ -1,1 +1,1 @@
-자전거_묘기<-BicycleStunt
+﻿생일파티<-BirthdayPartyActivity

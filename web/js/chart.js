@@ -62,7 +62,7 @@ function drawChart(chartClassName, data){
         .orient("left");
 
 // Specify the chart area and dimensions
-    var chart = d3.select("."+chartClassName)
+    var chart = d3.select("#"+chartClassName)
         .attr("width", spaceForLabels + chartWidth + spaceForLegend)
         .attr("height", chartHeight);
 

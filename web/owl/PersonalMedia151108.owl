@@ -2446,7 +2446,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Activity</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Activity는 List 정의와 내부 정의는 숭실대 담당</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Activity</Literal>
     </AnnotationAssertion>
 </Ontology>
 

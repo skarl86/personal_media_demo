@@ -16,14 +16,17 @@ var GRAPH_DISPLAY_COUNT = 10;
 var instanceText = '';
 var origOwlText = '';
 
-var OWL_FILE_PATH = "./owl/new_owl.owl";
+var OWL_FILE_PATH = "owl/new-automated-personalMedia-10-based-event_mod.owl";
 var PROB_JSON_PATH = "./json/prob_data.json";
 
 var newDescription = "";
 var someDescrpition = [];
 var allDescription = [];
+var imageList = [];
 
-readOWLFile("owl/PersonalMedia151108.owl");
+readOWLFile(OWL_FILE_PATH, function(text){
+    origOwlText = text;
+});
 //readInstanceFile("./instance/shot");
 readInstanceFile("./instance/birth_shot");
 readTextFile(PROB_JSON_PATH, function(text){
@@ -34,15 +37,15 @@ $(document).ready(function(){
     $('#btn-run').on('click', function(event) {
         event.preventDefault(); // To prevent following the link (optional)
         //your awesome code here
-        console.log("CLICK BUTTON1");
-        readInstance(instanceText);
-        calculateND(countDict); // finalDict 갱신 됨.
-        newDescription = createDescription();
-        //console.log(newDescription);
+        //console.log("CLICK BUTTON1");
+        // readInstance(instanceText);
+        // calculateND(countDict); // finalDict 갱신 됨.
+        // newDescription = createDescription();
+        ////console.log(newDescription);
         showPrettyDescription();
-        $(document).ready( function() {
-            $("#graph").load("testgraph.html");
-        });
+        // $(document).ready( function() {
+        //     $("#graph").load("testgraph.html");
+        // });
         //getGraphData();
         //window.requestFileSystem(window.TEMPORARY, 5*1024*1024, onInitFs,errorHandler);
 
@@ -113,7 +116,7 @@ function readInstance(text) {
     var classDict = createClassDictionary(text);
     createActivityDictionary(text);
     createPropertyDictionary(text); // 무조건 클래스 딕셔너리 뒤에 실행되어야 한다.
-    console.log(propDict);
+    //console.log(propDict);
     var lines = text.split('\n');
     for(var i = 0; i < lines.length; i++){
         var triples = lines[i].split(' ');
@@ -128,17 +131,17 @@ function readInstance(text) {
             }
         }
     }
-    //console.log(countDict);
-    //console.log(classDict);
+    ////console.log(countDict);
+    ////console.log(classDict);
 }
 /**
  *
  */
 function showPrettyDescription(){
     for(var key1 in probJson){
-        console.log(key1);
-        console.log(probJson[key1][0].name, probJson[key1][0].cdf);
-        console.log(probJson[key1][1].name, probJson[key1][1].cdf);
+        //console.log(key1);
+        //console.log(probJson[key1][0].name, probJson[key1][0].cdf);
+        //console.log(probJson[key1][1].name, probJson[key1][1].cdf);
         var objectList =[];
         objectList.push(probJson[key1][0].name);
         objectList.push(probJson[key1][1].name);
@@ -147,16 +150,63 @@ function showPrettyDescription(){
             '<tr>' +
             '<td id="act-text">' + key1 + '</td>' +
             '<td id="desc-text">' + makeAxiomText(objectList) + '</td>' +
-            '<td class="graph-text">' + '<svg class="chart-'+key1 + '" viewBox="400 0 100 300"></svg>' + '</td>' +
+            '<td class="graph-text">' + '<svg id="' + key1 + '"class="chart" viewBox="400 0 100 300"></svg>' + '</td>' +
             '</tr>');
-        drawChart("chart-"+key1, getGraphData(probJson[key1]));
+        drawChart(key1, getGraphData(probJson[key1]));
     }
 }
+function getImageList() {
+    return imageList;
+}
+function getOWL() {
+    return origOwlText;
+}
+function makeRuleTable() {
+    document.getElementById("Rule").innerText = getRule();
+}
+function makeShotTable(triplesByShot, thumbImageList){
+    imageList = thumbImageList;
+$('#shot-table > tbody:last').append(
+            '<tr>' + drawImage(thumbImageList) +
+            '</tr>' + 
+            '<tr height=40%>' +
+            drawShot(triplesByShot) +
+            '</tr>'
+            );
+}
+
+function drawImage(thumbImageList) {
+    var text = "";
+
+    for(var i in thumbImageList){
+        text += '<td id="img-text" width=15%>' +
+                '<p align="center">'+
+                '<img src="'+thumbImageList[i]+'" width="300px" align="center">' +
+                '</p>'+
+                '</td>'
+    }
+
+    return text;
+}
+function drawShot(triplesByShot){
+    var text = ""
+
+    for(var i in triplesByShot){
+        text += '<td id="shot-text">' + 
+            '<div style="min-height: 100%; max-height: 100%;overflow-y: scroll; ">'+ 
+            '<pre>' + triplesByShot[i].replace(/(<)/gi, "&lt") + '</pre>' +
+            '</div>' +
+            '</td>'
+    }
+
+    return text;
+}
+
 function makeAxiomText(objectList){
     var text = "";
     var property = "hasVisual";
     for(var index in objectList){
-        text += "∀∃";
+        // text += "∀∃";
         text += property + ".";
         text += "<b>" + objectList[index] +"</b>";
         text += "<br>";
@@ -184,7 +234,7 @@ function getPrettyDescription(type, property, className) {
             "<b><font color='#ff00ff'> some </font></b>" +
             "<b>" + className + "</b>";
     }
-    console.log(text);
+    //console.log(text);
     return text;
 }
 /**
@@ -225,7 +275,7 @@ function createDescription(){
 //
 //    decl.appendChild(clss);
 //    xmlDoc.documentElement.appendChild(decl);
-//    console.log("Declaration : \n" + (new XMLSerializer()).serializeToString(decl));
+//    //console.log("Declaration : \n" + (new XMLSerializer()).serializeToString(decl));
 //}
 
 function createSomeValueDescription(xmlDoc){
@@ -254,7 +304,7 @@ function createSomeValueDescription(xmlDoc){
     }
 
     xmlDoc.documentElement.appendChild(equi);
-    console.log("Some Value : \n" + (new XMLSerializer()).serializeToString(equi));
+    //console.log("Some Value : \n" + (new XMLSerializer()).serializeToString(equi));
 }
 
 /**
@@ -286,7 +336,7 @@ function createAllValueDescription(xmlDoc){
         allDescription.push(getPrettyDescription("All", property, key));
     }
     xmlDoc.documentElement.appendChild(subClassOf);
-    console.log("All Value : \n" + (new XMLSerializer()).serializeToString(subClassOf));
+    //console.log("All Value : \n" + (new XMLSerializer()).serializeToString(subClassOf));
 }
 /**
  *
@@ -294,6 +344,18 @@ function createAllValueDescription(xmlDoc){
  * @param callback
  */
 function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
+}
+
+function readOWLFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
     rawFile.open("GET", file, true);
@@ -320,27 +382,6 @@ function readInstanceFile(file)
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 instanceText = rawFile.responseText;
-            }
-        }
-    };
-    rawFile.send(null);
-}
-
-/**
- *
- * @param file
- */
-function readOWLFile(file)
-{
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                origOwlText = rawFile.responseText;
             }
         }
     };
@@ -399,7 +440,7 @@ function calculateND(countDict) {
     var M = math.mean(countArray);
     var SD = math.std(countArray);
     var dict = {}
-    console.log("Mean : " + M + " / SD : " + SD);
+    //console.log("Mean : " + M + " / SD : " + SD);
     for(var key in countDict){
         if(key.startsWith("Visual_")){
             var Z = countDict[key];
@@ -411,7 +452,7 @@ function calculateND(countDict) {
         }
     }
     sortedResult = sortingResult(dict);
-    console.log(finalDict);
+    //console.log(finalDict);
 }
 /**
  *

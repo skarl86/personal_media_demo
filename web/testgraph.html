@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
-svg{background-color:white;
-    padding:0px 0px 0px 0px;}
+svg{background-color:none;
+    padding: 0px 0px 0px 0px;}
     
 .chart .legend {
   fill: black;
@@ -13,7 +13,7 @@ svg{background-color:white;
 
 .chart text {
   fill: white;
-  font: 10px sans-serif;
+  font: 20px sans-serif;
   text-anchor: end;
 }
 
@@ -36,7 +36,8 @@ svg{background-color:white;
 
 
 </style>
-<svg class="chart" viewBox="400 0 100 300"></svg>
+
+<svg class="chart" viewBox="400 0 400 310"></svg>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 var data = getGraphData();
@@ -68,7 +69,7 @@ var data = getGraphData();
 //    }]
 //};
 
-var chartWidth       = 300,
+var chartWidth       = 400,
     barHeight        = 30,
     groupHeight      = barHeight * data.series.length,
     gapBetweenGroups = 10,
@@ -156,7 +157,7 @@ var legend = chart.selectAll('.legend')
     .attr('transform', function (d, i) {
         var height = legendRectSize + legendSpacing;
         var offset = -gapBetweenGroups/2;
-        var horz = spaceForLabels + chartWidth + 70 - legendRectSize;          //Distance legend, chart 
+        var horz = spaceForLabels + chartWidth + 100 - legendRectSize;          //Distance legend, chart 
         var vert = i * height - offset;
         return 'translate(' + horz + ',' + vert + ')';
     });

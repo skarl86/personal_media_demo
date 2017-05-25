@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -12,7 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/business-frontpage.css" rel="stylesheet">
-    <link href="css/chart.css" rel="stylesheet">
+      <link href="css/chart.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,52 +21,81 @@
     <script src="js/jquery.js"></script>
     <script src="js/math.min.js"></script>
     <script src="js/chart.js"></script>
+    <script src="js/preprocess.js"></script>
+    <script src="js/sequenceRule.js"></script>
     <script src="js/file_read.js"></script>
-    <script src="http://d3js.org/d3.v3.min.js"></script>
-    <!--<script type="text/javascript">-->
-        <!--$(document).ready( function() {-->
-
-            <!--$("#graph").load("testgraph.html");-->
-
-        <!--});-->
-    <!--</script>-->
-
+    <script src="js/d3.v3.min.js"></script>
+       
     <script>
-   $(document).ready(function(){
+
+   					var getParam = function(key){
+        				var _parammap = {};
+
+       	 				document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, 
+					function () {
+            						function decode(s) {
+                						return decodeURIComponent(s.split("+").join(" "));
+            						}
+ 
+           					 	_parammap[decode(arguments[1])] = decode(arguments[2]);
+	
+       					 	});
+							// _parammap[key] = _parammap[key].replace(/(<)/gi, "&lt")
+        						return decodeURIComponent(decodeURIComponent(_parammap[key]));
+    					};
+
+
+                    var goalAndMatchedList;
+				
+   $(document).ready(function(){                    //Resoner button (get Result.json)
     $("#Resoning").one("click",function(){
         $.getJSON('json/Result.json', null, function(data, status){
             $.each(data, function(index, entry){    
                 photo = [];
-                photo.push("&nbsp<p align=center><img src='img/shot00000000.png' style='width:250px;display:block;'>");
-                photo.push("&nbsp<p align=center><img src='img/shot00000001.png' style='width:250px;display:block;'>");
-                 
-                var trObj = null;
-                var tdObj1 = null;
-                var trObj2 = null;
-                var trObj3 = null;
+                var tempImageList = getImageList();
+                for(var k in tempImageList){
+                    photo.push('&nbsp<p align=center><img src="'+tempImageList[k]+'" style="width:250px;display:block;">');
+                }
+//                photo.push("&nbsp<p align=center><img src='img/shot_b.png' style='width:250px;display:block;'>");
+//                photo.push("&nbsp<p align=center><img src='img/shot_b2.png' style='width:250px;display:block;'>");
+
                 ///////////////////////////////////////////////
-                
-                for(var i=0; i<data['Result'].length; i++){             //result갯수는 2개
-                   
-                    str = "";                                             //2개중 첫번째 result에 있는 Inferred Activity를 가져와 str에 저장 
-                    str += data['Result'][i]['Inferred Activity']         
-                    strsplit = str.split('\n')                            //<br>처리
+                var inferActList = [];
+                for(var i=0; i<data['Result'].length; i++){
+
+                    str = "";
+                    var tempInfAct = data['Result'][i]['Inferred Activity'].split("\n");
+                    inferActList.push(tempInfAct);
+                    var tempList = [];
+                    for(var j in tempInfAct){
+                        if(!(tempInfAct[j] == "Activity" || tempInfAct[j] == "Shot")){
+                            tempList.push(tempInfAct[j]);
+                        }
+                    }
+//                    str += data['Result'][i]['Inferred Activity']
+                    str += tempList.join("\n");
+                    strsplit = str.split('\n')                            
+	       //Activity remove
+	         strsplit = strsplit.splice(1);
+
                     strResult="";  
-                    console.log(data['Result'][i]['Matched Rule'])
                     for(var j=0; j<strsplit.length; j++){
                         strResult += '&nbsp;'+strsplit[j]+'<br>'
-                    }                                                     //strResult엔 <br>처리된 Inferred Activity저장 (첫번째 iter이기 때문에 첫번째꺼 저장)
-                    
+                    }
+
                     match = "";
-                    match += data['Result'][i]['Matched Rule']
+//                    match += data['Result'][i]['Matched Rule']
+                    match += getMatchedList(getSequenceRuleList(getRule()), tempInfAct);
                     //matchsplit
                     
-                    var trObj = document.createElement("tr");             //첫번째 Inferred Activity가 저장 될 tr생성
-                    var tdObj1 = document.createElement("td");        //tr에 td 3개 생성
+                    var trObj = document.createElement("tr");             
+                    var tdObj1 = document.createElement("td");       
                     tdObj1.style.margin="0px auto";
                     tdObj1.style.width="25%";
                     var tdObj2 = document.createElement("td");
+	       	         tdObj2.style = 'padding-left:10px;'
                     var tdObj3 = document.createElement("td");
+	                 tdObj3.style = 'padding-left:10px;'
                     trObj.appendChild(tdObj1);
                     trObj.appendChild(tdObj2);
                     trObj.appendChild(tdObj3);
@@ -76,21 +104,27 @@
                     tdObj2.innerHTML='<font size=3>'+strResult+'</font>';
                     tdObj3.innerHTML='<font size=3>'+match+'</font>';
                     ActivitysEvent.appendChild(trObj);
-                    
                   }
+
+                goalAndMatchedList = findMatchedEvent(inferActList, getRule());
+
                 })
                    
                 ///////////////////////////////////////////////
-                
-                
+                Rulelength = data['Result'].length -1
+                console.log(Rulelength)
+                console.log(data['Result'][Rulelength]['Matched Event']);
+                lastMatchedEvent = data['Result'][Rulelength]['Matched Event'];
+                document.getElementById("lastevent").innerHTML="<b><font size=5><p align=center>"+goalAndMatchedList[0] ;
+            
                 match += data['Result'][0]['Matched Rule']
-                matchsplit = match.split('\n')
+//                matchsplit = match.split('\n')
+                matchsplit = goalAndMatchedList[1];
                 matchResult = "";
                 for(var i=0; i<matchsplit.length; i++){
-                    matchResult += '&nbsp;'+matchsplit[i]+'<br>'
+                    matchResult += '&nbsp;'+matchsplit[i].join("\n")+'<br>'
                 }
                 i=1;
-                console.log('RAE_img'+i)
                 
                 
             });
@@ -99,29 +133,28 @@
 
     
     </script>
-    
+  <style>
+.Rule{ //Style Class Name
+font-size: 23px;
+font-family:Arial,Helvetica,sans-serif;
+font-style:normal;
+background-image:none;
+height: 600px;
+width: 1000px;
+}
+#table-wrapper table thead th .overlayed-text{
+position:absolute;
+top:-40px;
+}
+</style>
 </head>
 
 <body>
     
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">ETRI Demo</a> </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li> <a href="#">About</a> </li>
-                    <li> <a href="#">Services</a> </li>
-                    <li> <a href="#">Contact</a> </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <div class="container">
+	<p  align=center><font size=7>Media Event Reasoner</font></p>
+	<p  align=center><font size=5>Ontology based Semantic Inference System for Personal Media</font></p>
+    </div>
     <!-- Image Background Page Header -->
     <!-- Note: The background image is set within the business-casual.css file. -->
     <header class="container">
@@ -129,119 +162,121 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="tagline"></h1>
-                    <table border=1 width=100% height=350>
+                    <table id="shot-table" border=1 width=100% height=350>
                         <div style="width:100px; height:50px;">
                             <!--<input type="file" name="FileNamedd">-->
                             <!--<iframe name="hid_func" style="display:none"></iframe>-->
                             
-                            <form name="SUV" id="SUV" action="DLReasoner" method="post"> <!-- target="hid_func"-->
                             <script type="text/javascript">
-                                    var img1 ="img/shot00000000.png"
-                                    var img2 ="img/shot00000001.png"
-                                    var img3 ="img/shot00000002.png"
-                                    var Media ="/img/"
-                                    var Ontology="/MediaData/Ontology/PersonalMedia161102.owl"
-                                    var Result = "/json/"
-                                    var Rule = "/MediaData/Rule/rules.txt"
-                                     
-                                    function menuClick(){
-                                        document.getElementById("shot1").innerHTML='<object width="100%" type="text/html" data="MediaData/InstanceFiles/BIC_001/shot00"></object>';
-                                        document.getElementById("shot2").innerHTML='<object width="100%" type="text/html" data="MediaData/InstanceFiles/BIC_001/shot01"></object>';
-                                        document.getElementById("shot3").innerHTML='<object width="100%" type="text/html" data="MediaData/InstanceFiles/BIC_001/shot02"></object>';
-                                        document.getElementById("Rule").innerHTML='<object  type="text/html" data="MediaData/Rule/rules.txt"></object>';
-                                        document.getElementById("img1").innerHTML='&nbsp<p align=center><img src="'+img1+'" width=350 align="center">';
-                                        document.getElementById("img2").innerHTML='&nbsp<p align=center><img src="'+img2+'" width=350 align="center">';
-                                        document.getElementById("img3").innerHTML='&nbsp<p align=center><img src="'+img3+'" width=350 align="center">';
-                                        
-                                        document.SUV.Media.value= "/img/"
-                                        document.SUV.Ontology.value= "/MediaData/Ontology/PersonalMedia161102.owl"
-                                        document.SUV.Result.value= "/json/"
-                                        document.SUV.Rule.value="/MediaData/Rule/rules.txt"
-                                        document.SUV.submit();
-            
-                                        }
-   
+		    
+                                   var img1 ="img/shot_b.png"
+                                   var img2 ="img/shot_b2.png"
+                                   
                             </script>
-                            
-                            
-                            <input type="hidden" name="Media" value="">
-                            <input type="hidden" name="Ontology" value="">
-                            <input type="hidden" name="Result" value="">
-                            <input type="hidden" name="Rule" value="">
-                            <button class="btn btn-primary btn-lg" onclick=menuClick()><i class="glyphicon glyphicon-download-alt"></i>&nbsp;&nbsp;Load&nbsp;&nbsp;</button>
-                            </form>
-                            
-                      
                         </div>
                         <thead class="thead-inverse" bgcolor="#333333">
                         <tr height=10%>
-                            <td colspan=3><b><font size=4 color="white">&nbsp; Media data Info </font></b></td>
+                            <td colspan=3><b><font size=5 color="white">&nbsp; Media data Info </font></b></td>
                         </tr>
                         </thead>
                         <tbody>
                             <tr height=10 bgcolor="#D5D5D5" style="padding-top:40">
-                            <td width=20% colspan=3><font size=4> &nbsp;Shots</font></td>
-                        </tr>
-                        <tr height=40%>
-                            <td width=25% id="img1">
-                            </td>
-                            <td width=25% id="img2"></td>
-                            <td width=25% id="img3"></td>
-                        </tr>
-                        <tr>
-                            <td id="shot1" >
-                                <div id="shot1"></div>
-                            </td>
-                            <td>
-                                <div id="shot2"></div>
-                            </td>
-                            <td>
-                                <div id="shot3"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan=3><div id="Rule"></div>
-                                </td>
-                        </tr>
+                                <td width=20% colspan=3><font size=4> &nbsp;Shots</font></td>
+                            </tr>
+            
+                                <script>
+                                    var ntriple = getParam("sNtriple")
+                                    var filePath = selectLocalFile(ntriple);
+                                    readTextFile(filePath, function(text){
+                    					preprocessing(unicodeToChar(text));
+                                        var thumbImageList = getThumbImageList(unicodeToChar(text));
+                    					var newTripleList = getNtripleList();
+                    					makeShotTable(newTripleList, thumbImageList);
+                    					//document.getElementById("test-area").innerText = list[0];
+                					});                                    // console.log(ntriple)
+                                </script>
                         </tbody>
+			
                     </table>
+
                 </div>
             </div>
         </div>
     </header>
-    <div class="container">&nbsp;</div>
-    <div style="width:100px; height:80px; margin:0  auto;">
-        <button id="btn-run" class="btn btn-primary btn-lg">Generate Desc</button>
+         <div class="container">&nbsp;</div>
+    <div style="width:100%; height:80px; margin:0  auto;" align=center>
+        
+         <iframe name="hid_func" style="display:none"></iframe>
+                     <form name="Owl" id="Owl" action="DLReasoner" method="post"  target = "hid_func">
+		
+                         <script>
+                            var Ontology="dsadasdsad";
+                            var OntologyPath = "/MediaData/Ontology"
+                            var Media ="/MediaData/InstanceFiles/BIC_001/"
+                            var Result = "/json/"
+                            var Rule = "/MediaData/Rule/rules.txt"
+                             function generateDescription() {
+                                showPrettyDescription();
+                                 makeRuleTable();
+                                document.Owl.Media.value= getInstance();
+                                document.Owl.Result.value= "/json/"
+                                document.Owl.Rule.value=getRule();
+                                document.Owl.Ontology.value = getOWL();
+                                document.Owl.OntologyPath.value = "/MediaData/Ontology"
+                                document.Owl.submit();
+                             }
+                         </script>
+                          <input type="hidden" name="Media" value="">
+                            <input type="hidden" name="Result" value="">
+                            <input type="hidden" name="Rule" value="">
+                         <input type="hidden" name="Ontology" value="">
+                         <input type="hidden" name="OntologyPath" value="">
+                         
+		<button id="btn-run" class="btn btn-primary btn-lg" onclick=generateDescription()>Generate Description</button>
+		
+                    </form>                   
+                            
+                            
+        
     </div>
     <header class="container">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <table id="graph-table" border=1 width=100% height=350>
-                        <thead class="thead-inverse" bgcolor="#333333">
-                        <tr height=10%>
-                            <td colspan=3><b><font size=4 color="white">&nbsp; Activity Class Description </font></b></td>
+		      <!--//style="min-height: 200px; max-height: 400px;overflow-y: scroll; position:relative; "-->
+		<div id="table-wrapper" style="position:relative;">
+		      <div style="min-height: 400px; max-height: 400px;overflow-y: scroll; margin-top:40px">
+                    <table id="graph-table" border=1 width=100%>
+
+                        <thead class="thead-inverse" bgcolor="#333333"   width=100%">
+			<!--
+			<tr bgcolor="#D5D5D5" border=1>
+				<th><span class="overlayed-text">A</span></th>
+				<th><span class="overlayed-text">B</span></th>
+				<th><span class="overlayed-text">C</span></th>
+			</tr>
+			-->
+                        <tr>
+                            <td colspan=4><b><font size=5 color="white">&nbsp; Activity Class Description </font></b></td>
                         </tr>
+			<tr bgcolor="#D5D5D5">
+                            		<td height=1 align=center><font size=4>Activity Name</font></td>
+                            		<td height=1 align=center ><font size=4>DL Axiom</font></td>
+                            		<td height=1 align=center colspan="2" ><font size=3>Top-10 ND Probability</font></td>
+		   	      		
+                        		</tr> 
                         </thead>
-                        <tbody>
-                        <!--<tr>-->
-                            <!--<td id="act-text">-->
-                            <!--</td>-->
-                            <!--<td id="desc-text">-->
-                            <!--</td>-->
-                            <!--<td id="graph-text">-->
-                                <!--<div id="graph"></div>-->
-                            <!--</td>-->
-                        <!--</tr>-->
-                        </tbody>
+
+                        <tbody style="max-height: 200px  overflow-y:auto;  width:100%;">
+			</tbody>
+			
                     </table>
-            </div>
-        </div>
+		</div>
+		</div>
+            <div height=10px></div>
         </div>
     </header>
         <div class="container">&nbsp;</div>
-    <div style="width:100px; height:45px; margin:0 auto;">
-        <button class="btn btn-primary btn-lg" id="Resoning"><i class="glyphicon glyphicon-ok"></i>&nbsp;&nbsp;&nbsp;&nbsp;Reasoning&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    <div style="width:100%; height:45px; margin:0 auto;" align=center>
+        <button class="btn btn-primary btn-lg" id="Resoning"><i class="glyphicon glyphicon-ok"></i>&nbsp;&nbsp;&nbsp;&nbsp;Event Reasoning&nbsp;&nbsp;&nbsp;&nbsp;</button>        
     </div>
         <div class="container">&nbsp;</div>
      <header class="container">
@@ -251,7 +286,7 @@
                     <table border=1 width=100% height=350>
                         <thead class="thead-inverse" bgcolor="#333333">
                         <tr height=10%>
-                            <td colspan=3><b><font size=4 color="white">&nbsp; Recognized Activitys & Event </font></b></td>
+                            <td colspan=3><b><font size=5 color="white">&nbsp; Recognized Activitys & Event </font></b></td>
                         </tr>
                          <tr bgcolor="#D5D5D5">
                             <td width=5 align=center><font size=4>Shots</font></td>
@@ -266,56 +301,45 @@
             </div>
         </div>
     </header>
-    <!-- Page Content -->
-    <div class="container">
-        <hr>
-        <div class="row">
-            <div class="col-sm-8">
-                <h2>What We Do</h2>
-                <p>Introduce the visitor to the business using clear, informative text. Use well-targeted keywords within your sentences to make sure search engines can find the business.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.</p>
-                <p> <a class="btn btn-default btn-lg" href="#">Call to Action &raquo;</a> </p>
-            </div>
-            <div class="col-sm-4">
-                <h2>Contact Us</h2> <address>
-                    <strong>Soongsil Univ</strong>
-                    <br>AI LAB
-                    <br>정보과학관 206호
-                    <br>
-                </address> <address>
-                    <abbr title="Phone">P:</abbr>(010) 6669-8499
-                    <br>
-                    <abbr title="Email">E:</abbr> <a href="mailto:#">houn8499@naver.com</a>
-                </address> </div>
-        </div>
-        <!-- /.row -->
-        <hr>
-        <div class="row">
-            <div class="col-sm-4"> <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
-                <h2>Marketing Box #1</h2>
-                <p>These marketing boxes are a great place to put some information. These can contain summaries of what the company does, promotional information, or anything else that is relevant to the company. These will usually be below-the-fold.</p>
-            </div>
-            <div class="col-sm-4"> <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
-                <h2>Marketing Box #2</h2>
-                <p>The images are set to be circular and responsive. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-            </div>
-            <div class="col-sm-4"> <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
-                <h2>Marketing Box #3</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-            </div>
-        </div>
-        <!-- /.row -->
-        <hr>
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>&copy; Etri Demo Version 2016</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
+    <div class= "container" height=30>
+        &nbsp;
     </div>
+    <div class="container">     
+        <div class="container">
+            
+            <div> 
+			<table border=1 width=100% height=100>
+                <thead class="thead-inverse" bgcolor="#333333">
+				<tr height=10 style="padding-top:40">
+                            <td width=20% colspan=3><b><font size=5 color="white"> &nbsp;&nbsp;Activity Sequence Rule</font></b></td>
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td colspan=3 style="padding-top:40px; padding-bottom:50px; padding-left:10px">
+								<div id="Rule"></div>
+                            </td>
+                        </tr>
+                </tbody>
+			</table>
+			<div class= "container" height=30>
+				&nbsp;
+			</div>
+                <table border=1 width=100% height=100>
+                    <tr>
+                        <td width=25% bgcolor="#D5D5D5" style="border-left: 0px solid; border-right: 1px solid; border-top: 1px solid; border-bottom: 0px none">
+                            <b><font size= 5><p align= center>Matched Event</p></font></b>
+                        </td>
+                        <td id ="lastevent">
+                        </td>
+                    </tr>
+                </table>
+				<div class="container">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Content -->
+   
     <!-- /.container -->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

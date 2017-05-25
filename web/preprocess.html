@@ -7,6 +7,18 @@
     <script src="js/preprocess.js"></script>
 </head>
 <body>
-
+    <div id="test-area">
+        <script>
+            readTextFile("new_n3/BirthdayParty_n3_thumb/BirthdayParty639.n3", function (text) {
+                getThumbImageList(text);
+//                var filePath = selectLocalFile(text);
+//                readTextFile(filePath, function(text){
+//                    preprocessing(unicodeToChar(text));
+//                    var list = getNtripleList();
+//                    document.getElementById("test-area").innerText = list[0];
+//                });
+            });
+        </script>
+    </div>
 </body>
 </html>
